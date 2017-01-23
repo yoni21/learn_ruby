@@ -45,9 +45,11 @@ class TestCalculator < MiniTest::Test
   # If you feel you're up for the challenge, fill in the missing code in the tests below,
   # based off the descriptions, and get them to pass.
   def test_multiplies_two_numbers
+    assert_equal 14, product(7, 2)
   end
 
   def test_multiplies_several_numbers
+    assert_equal 81, product_sev_num(1, 3, 3, 3, 3, 1)
   end
 
 # http://en.wikipedia.org/wiki/Factorial
